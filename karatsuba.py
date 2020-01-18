@@ -4,7 +4,7 @@ import math
 class Karatsuba(object):
     @staticmethod
     def uncompose(a):
-        if 2 <= len(a) <= 3:
+        if 2 <= len(a):
             return a[:1], a[1:], 1
         if len(a) == 3:
             return a[:2], a[2:], 2
