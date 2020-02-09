@@ -22,10 +22,11 @@ class Karatsuba(object):
         return z2 * int(math.pow(10, 2 * m1)) + z1 * int(math.pow(10, 1 * m1)) + z0
     
 
-a = '123456'
-b = '111111'
-mult = Karatsuba()
-print(mult.karatsuba(a, b))
-print(int(a) * int(b))
+if __name__ == '__main__':
+  a = '123456'
+  b = '111111'
+  mult = Karatsuba()
+  print(mult.karatsuba(a, b))
+  print(int(a) * int(b))
 
         
